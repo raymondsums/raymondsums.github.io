@@ -4,7 +4,11 @@
 		<meta charset = 'utf-8'>
 		<title>Survey Form</title>
 		<style>
-			*{
+		#background{
+			padding:15px;
+			margin:20px;
+		}
+		*{
 			text-align:center;
 		}
 		h1{
@@ -12,43 +16,60 @@
 		}
 		button{
 			padding:10px 20px;
-			background-color: orange;
+			background-color:white;
 		}
-		#Appendix{
+		button:hover{
+			background-color:orange;
+		}
+		#appendix{
+			font-size: 30px;
 			font-weight: bold;
+			color: black;
+			text-align: center;
+			width: 100%;
+			text-decoration: underline;
+		}
+		#appendix_div{
+			background-color:orange;
+			width:100%;
+			padding:20px;
+			margin:auto;
 		}
 	</style>
 	</head>
 	<body>
-		<h1>Survey Form</h1>
+		<div id="background">
+			<h1 style="text-decoration: underline; padding:0px 0px 15px 0px">Survey Form</h1>
 		<nav>
-			<a href= "raymondsums.github.io/ice1.html"><img src="img/Character-01.jpg" alt = "Ray"/ width=100px height=100px></a> 
-			<a href="img/Character-02.jpg"><img src="img/Character-02.jpg" alt = "Kelly"/ width=100px height=100px></a>
+			<a href= "raymondsums.github.io/ice1.html"><img src="img/Character-01.jpg" alt ="Ray" width=110 height=110></a> 
+			<a href="img/Character-02.jpg"><img src="img/Character-02.jpg" alt ="Kelly" width=110 height=110></a>
 		</nav>
-		Progress:<progress value="0" max="100">			
+		Progress:<progress value="80" max="100">			
 		</progress>
 		<p>Please fill in the form below</p>
 		<form>
-		Name:
-		<input type="text" name="name" id = "name"></label><br>
-		<label for="dob">DOB:</label>
-		<input type="date" name="DOB" id = "dob">
-		<br><br>
-		Please enter your choice of snack:<br>
-		<input type="radio" name="snack" value="pizza"> Pizza 🍕<br> 
-  		<input type="radio" name="snack" value="donut"> Donut 🍩<br>
-  		<input type="radio" name="snack" value="vegan"> Vegan Stuff 🥦
-  		<br><br>
-  		Please enter your choice of drink:<br>
-		<input type="radio" name="snack" value="coffee"> Coffee ☕<br>
-  		<input type="radio" name="snack" value="tea"> Tea 🍵<br>
-  		<input type="radio" name="snack" value="water"> Water 🥤<br><br>
-	</form>
-	<button type="button">Submit</button>
-	<p>Thank You!</p>
-	<p id="Appendix">Appendix</p>
-	<img src = "img/Form_1.JPG" width = 200px height = 200px>
-	<br>
-	<img src = "img/Form_2.JPG" width = 200px height = 200px> 
+			<label>Name:
+			<input type="text" name="name" id = "name"></label><br>
+			<label for="dob">DOB:</label>
+			<input type="date" name="DOB" id = "dob">
+			<br><br>
+			Please enter your choice of snack:<br>
+			<input type="radio" name="snack" value="pizza"> Pizza 🍕<br> 
+  			<input type="radio" name="snack" value="donut"> Donut 🍩<br>
+  			<input type="radio" name="snack" value="vegan"> Vegan Stuff 🥦
+  			<br><br>
+  			Please enter your choice of drink:<br>
+			<input type="radio" name="snack" value="coffee"> Coffee ☕<br>
+  			<input type="radio" name="snack" value="tea"> Tea 🍵<br>
+  			<input type="radio" name="snack" value="water"> Water 🥤<br><br>
+		</form>
+			<button style="font-family:Europa; font-weight: bold" type="button">Submit</button>
+			<p style="padding-top: 15px;font-weight: bold">Thank You!</p>
+		</div>
+		<div id="appendix_div">
+			<p id="appendix">Appendix Section</p>
+			<img src = "img/Form_1.JPG" alt="sketch_1" width = 250 height = 200>
+			<img src = "img/Form_2.JPG" alt="sktech_2" width = 250 height = 200> 
+		</div>
 	</body>	
 </html>
