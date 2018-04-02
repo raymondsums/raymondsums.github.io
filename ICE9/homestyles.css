@@ -1,0 +1,92 @@
+#banner{
+	position: relative;
+	width: auto;
+}
+#banner>img{
+	height:25vh;
+	width: 100%;
+}
+.Project-Container{
+	display: inline-block;
+	margin:10px 5px 5px 5px;
+}
+.Project-Container>img{
+	height: auto;
+	max-height: 300px;
+	width: 400px;
+}
+.Project-Container>p{
+	text-align: center;
+}
+#center{
+	position:absolute;
+	top:20%;
+	width:100%;
+	text-align: center;
+	font-size:18px;
+}
+#projects{
+	display:inline-grid;
+	grid-gap:5px;
+	position: relative;
+	padding: 30px 0px;
+}
+h1{
+	color: white;
+	font-family: "Proxima Nova", Futura, Europa, Helvetica;
+}
+h2{
+	text-align: center;
+	font-family: Europa, Helvetica;
+	padding:20px 0px;
+}
+div>nav>ul{
+	display: inline;
+}
+ul>a{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	font-family: Europa, Helvetica;
+	color: #A9A9A9;
+}
+ul>a:hover{
+	color: black;
+	border-bottom: 3px black solid;
+}
+.Project-Container:hover{
+	box-shadow: 5px 5px 10px #DCDCDC;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: Europa, Helvetica;
+	height: 50px;
+	background:#A9A9A9;
+}
+p{
+	font-family: Europa, Helvetica;
+}
+@media only screen and (min-width: 0px) and (max-width: 650px){
+	.top-nav{
+		display:block;
+	}
+	.logo{
+		position: absolute;
+		left:40%;
+	}
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px){
+
+}
+
+@media only screen and (min-width: 1001px){
+	
+}

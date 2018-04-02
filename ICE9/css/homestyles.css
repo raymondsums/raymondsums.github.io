@@ -1,0 +1,96 @@
+nav{
+	height:100px;
+	margin: 0px 50px;
+}
+.nav-link-active:active{
+	
+}
+.logo{
+	height:50px !important;
+	width:50px !important;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+.background-cover{
+	padding: 50px 0px;
+	background: url("../assets/star-banner.jpg") no-repeat center center;
+	background-size: cover;
+}
+.background-cover-about{
+	padding: 50px 0px;
+	background: url("../assets/profile.jpg") no-repeat center center;
+	background-size: cover;
+}
+.background-cover-superbas{
+	padding: 50px 0px;
+	background: url("../assets/superbas-banner.jpg") no-repeat center center;
+	background-size: cover;
+}
+.Project-Container{
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	border:.25px solid #DCDCDC;
+}
+.Project-Container>p{
+	text-align: center;
+}
+#center{
+	position:absolute;
+	font-size:18px;
+}
+h1{
+	color: white !important;
+	font-family: "Proxima Nova", Futura, Europa, Helvetica;
+}
+#work>h2{
+	text-align: center;
+	font-family: Europa, Helvetica;
+	padding:20px 0px;
+}
+div>nav>ul{
+	display: inline;
+}
+ul>a{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	text-decoration: none !important;
+	font-family: Europa, Helvetica;
+	font-size:18px;
+	color: #A9A9A9;
+}
+ul>a:hover{
+	border-bottom: 5px red solid;
+}
+.Project-Container:hover{
+	box-shadow: 5px 5px 10px #DCDCDC;
+}
+.footer{
+	position: relative;
+  	margin-top: -150px;
+  	height: 150px;
+  	clear:both;
+  	padding-top:100px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-family: Europa, Helvetica;
+}
+.text{
+	margin: 0vw 30vw;
+}
+.Project-Container>p{
+	font-family: Europa, Helvetica;
+	padding: 30px 0px 20px 0px;
+}
+.description>p{
+	font-family: Europa, Helvetica;
+	margin:50px 200px;
+	display:block;
+}
+.superbas-summary{
+	border-bottom: 1px solid black;
+}
+
