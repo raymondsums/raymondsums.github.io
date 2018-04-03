@@ -2,9 +2,6 @@ nav{
 	height:100px;
 	margin: 0px 50px;
 }
-.nav-link-active:active{
-	
-}
 .logo{
 	height:50px !important;
 	width:50px !important;
@@ -26,6 +23,11 @@ nav{
 	background: url("../assets/superbas-banner.jpg") no-repeat center center;
 	background-size: cover;
 }
+.background-cover-vr{
+	padding: 50px 0px;
+	background: url("../assets/virtual-reality-banner.jpg") no-repeat center center;
+	background-size: cover;
+}
 .Project-Container{
 	display: inline-block;
 	width: 100%;
@@ -41,14 +43,14 @@ nav{
 }
 h1{
 	color: white !important;
-	font-family: "Proxima Nova", Futura, Europa, Helvetica;
+	font-family: Europa, Helvetica;
 }
 #work>h2{
 	text-align: center;
 	font-family: Europa, Helvetica;
 	padding:20px 0px;
 }
-div>nav>ul{
+nav>ul{
 	display: inline;
 }
 ul>a{
@@ -57,26 +59,33 @@ ul>a{
 	padding-top: 35px;
 	padding-bottom: 20px;
 	text-decoration: none !important;
-	font-family: Europa, Helvetica;
+	font-family: uropa, Helvetica;
 	font-size:18px;
 	color: #A9A9A9;
 }
 ul>a:hover{
-	border-bottom: 5px red solid;
+	color: gray;
+	border-bottom: 5px gray solid;
 }
 .Project-Container:hover{
 	box-shadow: 5px 5px 10px #DCDCDC;
 }
 .footer{
 	position: relative;
-  	margin-top: -150px;
-  	height: 150px;
+  	height: 100px;
   	clear:both;
-  	padding-top:100px;
+  	padding-top:50px;
 	width: 100%;
 	text-align: center;
 	color: black;
 	font-family: Europa, Helvetica;
+}
+.footer>p>a{
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+.footer>p>a:hover{
+	border-bottom: 5px solid black;
 }
 .text{
 	margin: 0vw 30vw;
@@ -85,12 +94,57 @@ ul>a:hover{
 	font-family: Europa, Helvetica;
 	padding: 30px 0px 20px 0px;
 }
-.description>p{
-	font-family: Europa, Helvetica;
-	margin:50px 200px;
-	display:block;
-}
-.superbas-summary{
+.project-summary{
 	border-bottom: 1px solid black;
 }
-
+.project-description>p{
+	padding: 30px 0px;
+}
+.project-description>h3{
+	font-weight: bold;
+}
+.project-description>h4{
+	font-weight: bold;
+}
+img{
+	height:auto;
+	width:100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+.project-summary{
+	margin-left: 250px;
+	margin-right: 250px;
+	padding: 30px 0px;
+	font-family: "Futura Light", Europa, Helvetica;
+}
+.project-description{
+	margin-left: 250px;
+	margin-right: 250px;
+	font-family: "Futura Light", Europa, Helvetica;	
+}
+.description>p{
+	font-family: Europa, Helvetica;
+	margin:50px 250px;
+	display:block;
+}
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+.project-summary{
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 30px 0px;
+	font-family: "Futura Light", Europa, Helvetica;
+}
+.project-description{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: "Futura Light", Europa, Helvetica;	
+}
+.description>p{
+	font-family: Europa, Helvetica;
+	margin:50px 100px;
+	display:block;
+}
+}
