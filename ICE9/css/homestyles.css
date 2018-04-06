@@ -1,12 +1,6 @@
 nav{
-	height:100px;
+	height: 100px;
 	margin: 0px 50px;
-}
-.logo{
-	height:50px !important;
-	width:50px !important;
-	margin-top: 20px;
-	margin-left: 25px;
 }
 .background-cover{
 	padding: 50px 0px;
@@ -50,20 +44,7 @@ h1{
 	font-family: Europa, Helvetica;
 	padding:20px 0px;
 }
-nav>ul{
-	display: inline;
-}
-ul>a{
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 35px;
-	padding-bottom: 20px;
-	text-decoration: none !important;
-	font-family: uropa, Helvetica;
-	font-size:18px;
-	color: #A9A9A9;
-}
-ul>a:hover{
+ul>li>a:hover{
 	color: gray;
 	border-bottom: 5px gray solid;
 }
@@ -110,8 +91,33 @@ img{
 	height:auto;
 	width:100%;
 }
+a:hover{
+	text-decoration: none !important;
+}
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+nav{
+	position: relative;
+}
+.logo{
+	height:50px !important;
+	width: auto;
+	margin-top:20px;
+}
+nav>ul{
+	list-style-type: none;
+	float:right;
+}
+nav>ul>li{
+	display: inline-block;
+	margin-top: 15px;
+	padding: 20px 10px;
+	text-decoration: none !important;
+	font-family: Europa, Helvetica;
+	font-size:18px;
+	color: #A9A9A9;
+	text-align:right;
+}
 .project-summary{
 	margin-left: 250px;
 	margin-right: 250px;
@@ -131,6 +137,33 @@ img{
     }
 @media only screen and (max-width: 768px) {
     /* For mobile: */
+.logo{
+	height:50px !important;
+	width: auto;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+nav>ul{
+	list-style-type: none;
+	float:right;
+}
+nav>ul>li{
+	display: inline-block;
+	margin-top: 15px;
+	padding: 20px 10px;
+	text-decoration: none !important;
+	font-family: Europa, Helvetica;
+	font-size:18px;
+	color: #A9A9A9;
+	text-align:right;
+}
+ul>li>a{
+	color:gray;
+	padding-bottom: 10px;
+}
+ul>li>a:hover{
+	text-decoration: none;
+}
 .project-summary{
 	margin-left: 100px;
 	margin-right: 100px;
@@ -147,4 +180,4 @@ img{
 	margin:50px 100px;
 	display:block;
 }
-}
+	}
