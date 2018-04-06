@@ -44,10 +44,6 @@ h1{
 	font-family: Europa, Helvetica;
 	padding:20px 0px;
 }
-ul>li>a:hover{
-	color: gray;
-	border-bottom: 5px gray solid;
-}
 .Project-Container:hover{
 	box-shadow: 5px 5px 10px #DCDCDC;
 }
@@ -124,6 +120,15 @@ a:hover{
 	padding-bottom: 10px;
 	border-bottom: 5px black solid;
 }
+ul>li>a{
+	color:gray !important;
+}
+ul>li>a:hover{
+	color: black;
+	text-decoration: none;
+	padding-bottom: 10px;
+	border-bottom: 5px black solid;
+}
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 nav{
@@ -145,7 +150,7 @@ nav>ul>li{
 	text-decoration: none !important;
 	font-family: Europa, Helvetica;
 	font-size:18px;
-	color: #A9A9A9;
+	color: #A9A9A9 !important;
 	text-align:right;
 }
 .project-summary{
@@ -184,15 +189,8 @@ nav>ul>li{
 	text-decoration: none !important;
 	font-family: Europa, Helvetica;
 	font-size:18px;
-	color: #A9A9A9;
+	color: #A9A9A9 !important;
 	text-align:right;
-}
-ul>li>a{
-	color:gray;
-	padding-bottom: 10px;
-}
-ul>li>a:hover{
-	text-decoration: none;
 }
 .project-summary{
 	margin-left: 100px;
