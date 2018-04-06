@@ -112,21 +112,22 @@ a:hover{
     font-family: Europa, Helvetica;
 }
 .dropdown-content>a>p{
-	padding-bottom:15px;
+	padding-bottom:15px !important;
 	color: gray;
 }
 .dropdown-content>a>p:hover{
 	color: black;
-	padding-bottom: 10px;
+	padding-bottom: 10px !important;
 	border-bottom: 5px black solid;
 }
 ul>li>a{
 	color:gray !important;
+	padding-bottom: 10px !important;
 }
 ul>li>a:hover{
 	color: black;
 	text-decoration: none;
-	padding-bottom: 10px;
+	padding-bottom: 10px !important;
 	border-bottom: 5px black solid;
 }
 @media only screen and (min-width: 768px) {
