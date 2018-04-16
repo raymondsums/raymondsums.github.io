@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" href="css/style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+			</script>
+			<script>
+				$(document).ready(function(){
+					$("#hide").click(function(){
+						$("#image").hide();
+						$("#image2").addClass("center");
+					});
+					$("#show").click(function(){
+						$("#image").show();
+						$("#image2").removeClass("center");
+					});
+				});
+			</script>
+			<title>
+				Raymond Su's Exam 2
+			</title>
+		</head>
+		<body>
+			<header>
+				<h1>Raymond Su</h1>
+			</header>
+				<img id="image" src="images/examPic.jpg" alt="photo of three person in a theme park">
+				<img id="image2" src="images/UMSI-logo.jpg" alt="logo image of University of Michigan School of Information">
+			<br>
+			<button type="button" id="hide">Hide Image</button>
+			<button type="button" id="show">Show Image</button>
+		</body>
+	</html>
