@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>
+				SI 539 - Raymond Su's Final Project
+			</title>
+		</head>
+		<body>
+			<header>
+				<h1>
+				Raymond Su <br>
+				SI 539 <br>
+				Final Project <br>
+				</h1>
+			</header>
+			<h2>Engineers</h2>
+
+			<h3>Website Assessed<br>
+				<a href="http://alumnus.alumni.umich.edu/notable-alumni/">http://alumnus.alumni.umich.edu/notable-alumni/</a></h3>
+
+			<form>
+				<h2>01</h2>
+				<h3><input type="checkbox">Use the correct HTML element for your content</h3>
+				<p>The website do not use proper headings to represent content hierarchy, some H2 headings are nested within H5 headings<br>
+				<strong>Solution</strong> : Make H5 headings come after H2 headings, organize headings by content hierarchy instead of style. Style headings' font-size with CSS rather than HTML.
+				</p>
+
+
+				<h2>02</h2>
+				<h3><input type="checkbox">Support keyboard navigation</h3>
+				<p>The content of the site represented by id="main-content" has a tabindex attribute of -1. As a result, user will tab through the page without the ability to interact with the content. There is also no way to interact with the button, represented by class="et_pb_toggle_title" because it is a pseudo-element, meaning users navigating the website with keyboard is not able to expand the accordion.<br>
+				<strong>Solution</strong>: Make the website more "tab-able" by including tab-index values on the items inside id="main-content" and make the button to toggle accordion possible to be tabbed on, by creating them with html instead of css.</p>
+
+				<h2>03</h2>
+				<h3><input type="checkbox">Give users a way to skip top level navigation to access main content</h3>
+
+				<h3><input type="checkbox">Create alternate routes for users to access information</h3>
+
+				<h3><input type="checkbox">Understand and use HTML landmarks</h3>
+				<strong>Solution</strong>: By making tabindex for id="main-content" equal to 1, we can allow users who use assistive device to be able to skip specific areas of the page to areas that they are interested in.
+
+				<h2>04</h2>
+				<h3><input type="checkbox">Write good alt text for your images</h3>
+				<p>This is done well for the most part. There are texts present for the larger images/logo such as the 'Michigan Alumnus' and 'Michigan Alumni Association' logo. However, there are no alt texts present for li items in the main menu (id="menu-main-menu"), where the M block and open book icons are located. Similarly, the search icon (id="et_search_icon") is also missing alt text.<br>
+				<strong>Solution</strong>: Include alt text for the font icons, such as the search icon</p>
+
+				<h2>05</h2>
+				<h3><input type="checkbox" checked="checked">Design focus states to help users navigate and understand where they are</h3>
+
+				<h3><input type="checkbox" checked="checked">Help users understand inputs, and help them avoid and correct mistakes</h3>
+
+				<h2>06</h2>
+				<h3><input type="checkbox">Use ARIA attributes when applicable</h3>
+
+				<h3><input type="checkbox">Make SVGs accessible to assistive technology</h3>
+
+				<h3><input type="checkbox">Hide decorative elements from screen readers</h3>
+				<p>No ARIA-hidden labels for social media logos.<br>
+				<strong>Solution</strong>: Make ARIA-hidden="true" to hide non useful information from screen readers.</p>
+
+				<h2>07</h2>
+				<h3><input type="checkbox" checked="checked">Make links descriptive</h3>
+				<p>This is done well in this instance</p>
+
+				<h3><input type="checkbox" checked="checked">Avoid images and iconography in pseudo-elements</h3>
+				<p>The website uses many instances of pseudo-elements.
+				<strong>Solution</strong>: Make the pseudo-elements tab-able or if they are not important to the user, make the aria-hidden ="true"</p>
+
+				<h2>08</h2>
+				<h3><input type="checkbox" checked="checked">Links should be visually identifiable and have clear :focus and :active states</h3>
+				<p>The links have clear :focus and :active states. However, links in nav bar have similar :hover and :active states. Would be a good idea to make them different.</p>
+
+				<h2>09</h2>
+				<h3><input type="checkbox" checked="checked">HTML document should have language attribute</h3>
+				<p>HTML document have language attribute, html lang="en-us"</p>
+			</form>
+		</body>
+	</html>
